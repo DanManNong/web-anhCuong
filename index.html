@@ -3,62 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hồ sơ Chuyên gia | [TÊN CHÚ CƯỜNG]</title>
+    <title>Lê Viết Cường | Professional Profile</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; }
+        body { font-family: 'Inter', sans-serif; background-color: #050a1a; }
         h1, h2, .font-serif { font-family: 'Playfair Display', serif; }
-        .text-silver { color: #e2e8f0; }
-        .border-silver { border-color: #475569; }
-        .fade-in { animation: fadeIn 2s ease-out; }
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .text-gold { color: #c5a059; }
+        .border-gold { border-color: #c5a059; }
+        .bg-navy { background-color: #050a1a; }
+        /* Hiệu ứng chuyển động nhẹ nhàng */
+        .fade-in { animation: fadeIn 1.5s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
-<body class="text-white min-h-screen flex flex-col justify-between relative overflow-hidden">
+<body class="text-white min-h-screen flex flex-col justify-between relative overflow-x-hidden">
 
-    <main class="flex-grow flex flex-col items-center justify-center px-6 py-20 z-10 fade-in">
-        <h1 class="text-5xl md:text-8xl font-serif font-bold uppercase tracking-tighter mb-4 text-center">
-             [TÊN CHÚ <span class="text-gray-500 italic">CƯỜNG]</span>
+    <div class="absolute inset-0 opacity-5 pointer-events-none">
+        <div class="absolute top-[-5%] left-[-5%] w-96 h-96 border border-gold rounded-full"></div>
+        <div class="absolute bottom-[-5%] right-[-5%] w-[500px] h-[500px] border border-gold rounded-full"></div>
+    </div>
+
+    <header class="p-8 text-center fade-in">
+        <div class="text-[10px] font-bold tracking-[0.4em] text-gold/60 uppercase italic">Tầm nhìn & Bản lĩnh lãnh đạo</div>
+    </header>
+
+    <main class="flex-grow flex flex-col items-center justify-center px-6 py-10 relative z-10 fade-in">
+        
+        <h1 class="text-5xl md:text-8xl font-serif font-bold uppercase tracking-tighter leading-none mb-4 text-center">
+            Lê Viết <span class="text-gold italic">Cường</span>
         </h1>
         
-        <div class="h-[2px] bg-gradient-to-r from-transparent via-gray-600 to-transparent w-64 mb-12"></div>
+        <div class="h-px bg-gold/20 w-48 mb-12"></div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16 w-full max-w-4xl text-center">
-            <div class="p-6 border border-white/5 rounded-lg hover:bg-white/5 transition">
-                <i class="fas fa-briefcase text-2xl text-gray-400 mb-4"></i>
-                <h3 class="text-xs font-bold tracking-widest uppercase">Sự nghiệp</h3>
-                <p class="text-[10px] text-gray-500 mt-2 uppercase">Lãnh đạo & Quản trị</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 mb-16 w-full max-w-5xl">
+            <div class="group flex flex-col items-center text-center">
+                <div class="w-20 h-20 rounded-full border border-gold/30 flex items-center justify-center group-hover:border-gold group-hover:bg-gold/5 transition-all duration-500 mb-4">
+                    <i class="fas fa-briefcase text-2xl text-gold/70 group-hover:text-gold transition"></i>
+                </div>
+                <h3 class="text-xs font-bold tracking-[0.2em] text-gold uppercase transition">Sự nghiệp</h3>
+                <p class="text-[10px] text-gray-500 mt-2 uppercase tracking-widest leading-relaxed">Lãnh đạo & Quản trị</p>
             </div>
-            <div class="p-6 border border-white/10 rounded-lg bg-white/5 scale-105 shadow-2xl">
-                <i class="fas fa-gem text-2xl text-white mb-4"></i>
-                <h3 class="text-xs font-bold tracking-[0.3em] uppercase">Vị thế</h3>
-                <p class="text-[10px] text-gray-300 mt-2 uppercase">Chuyên gia Cao cấp</p>
+
+            <div class="group flex flex-col items-center text-center">
+                <div class="w-20 h-20 rounded-full border border-gold flex items-center justify-center group-hover:bg-gold/10 transition-all duration-500 mb-4 shadow-[0_0_15px_rgba(197,160,89,0.2)]">
+                    <i class="fas fa-gem text-2xl text-gold"></i>
+                </div>
+                <h3 class="text-xs font-bold tracking-[0.2em] text-gold uppercase transition">Vị thế</h3>
+                <p class="text-[10px] text-gray-400 mt-2 uppercase tracking-widest leading-relaxed font-semibold">Chuyên gia Cao cấp</p>
             </div>
-            <div class="p-6 border border-white/5 rounded-lg hover:bg-white/5 transition">
-                <i class="fas fa-handshake text-2xl text-gray-400 mb-4"></i>
-                <h3 class="text-xs font-bold tracking-widest uppercase">Kết nối</h3>
-                <p class="text-[10px] text-gray-500 mt-2 uppercase">Hợp tác bền vững</p>
+
+            <div class="group flex flex-col items-center text-center">
+                <div class="w-20 h-20 rounded-full border border-gold/30 flex items-center justify-center group-hover:border-gold group-hover:bg-gold/5 transition-all duration-500 mb-4">
+                    <i class="fas fa-handshake text-2xl text-gold/70 group-hover:text-gold transition"></i>
+                </div>
+                <h3 class="text-xs font-bold tracking-[0.2em] text-gold uppercase transition">Kết nối</h3>
+                <p class="text-[10px] text-gray-500 mt-2 uppercase tracking-widest leading-relaxed">Hợp tác bền vững</p>
             </div>
         </div>
 
-        <div class="w-full max-w-xl border border-white/10 p-10 bg-white/[0.02] backdrop-blur-xl text-center">
-            <p class="text-gray-500 text-[10px] font-bold uppercase tracking-[0.4em] mb-4">Digital Identity</p>
-            <h2 class="text-2xl font-serif italic mb-8 text-gray-300">"Hành trình vạn dặm bắt đầu từ một bước chân."</h2>
-            
-            <div class="pt-8 border-t border-white/5 flex flex-col gap-4">
-                <p class="text-sm tracking-[0.2em] text-gray-400 uppercase">Hệ thống đang khởi tạo</p>
-                <div class="flex justify-center gap-6">
-                    <span class="px-4 py-2 border border-white/10 text-[10px] uppercase tracking-widest">Phone: Updating</span>
-                    <span class="px-4 py-2 border border-white/10 text-[10px] uppercase tracking-widest">Email: Updating</span>
+        <div class="w-full max-w-2xl text-center">
+            <div class="inline-block w-full border border-white/10 bg-white/5 backdrop-blur-md p-6 md:p-10 rounded-sm hover:border-gold/40 transition-all duration-700 group">
+                <span class="text-gold text-[10px] font-bold uppercase tracking-[0.3em] mb-2 block opacity-60">Digital Identity</span>
+                <h2 class="text-xl md:text-3xl font-serif italic mb-6">Website đang trong quá trình khởi tạo.</h2>
+                
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 pt-6 border-t border-white/5">
+                    <div class="text-left">
+                        <span class="text-[9px] uppercase tracking-widest text-gray-500 block mb-1">Liên hệ</span>
+                        <span class="text-lg md:text-xl font-serif tracking-tight text-white/90">Đang cập nhật</span>
+                    </div>
+                    <div class="text-left">
+                        <span class="text-[9px] uppercase tracking-widest text-gray-500 block mb-1">Email</span>
+                        <span class="text-lg md:text-xl font-serif tracking-tight text-white/90 lowercase">hello@levietcuong.com</span>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="p-10 text-center opacity-30">
-        <p class="text-[9px] uppercase tracking-[0.5em]">A Digital Gift by Nguyen Tan Phong © 2026</p>
+    <footer class="p-8 text-center fade-in">
+        <p class="text-gray-700 text-[9px] uppercase tracking-[0.4em]">A Digital Gift by Nguyen Tan Phong © 2026</p>
     </footer>
 
 </body>
