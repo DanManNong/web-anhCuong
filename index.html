@@ -1,1 +1,65 @@
-index.html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ Chuyên gia | [TÊN CHÚ CƯỜNG]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; }
+        h1, h2, .font-serif { font-family: 'Playfair Display', serif; }
+        .text-silver { color: #e2e8f0; }
+        .border-silver { border-color: #475569; }
+        .fade-in { animation: fadeIn 2s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body class="text-white min-h-screen flex flex-col justify-between relative overflow-hidden">
+
+    <main class="flex-grow flex flex-col items-center justify-center px-6 py-20 z-10 fade-in">
+        <h1 class="text-5xl md:text-8xl font-serif font-bold uppercase tracking-tighter mb-4 text-center">
+             [TÊN CHÚ <span class="text-gray-500 italic">CƯỜNG]</span>
+        </h1>
+        
+        <div class="h-[2px] bg-gradient-to-r from-transparent via-gray-600 to-transparent w-64 mb-12"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16 w-full max-w-4xl text-center">
+            <div class="p-6 border border-white/5 rounded-lg hover:bg-white/5 transition">
+                <i class="fas fa-briefcase text-2xl text-gray-400 mb-4"></i>
+                <h3 class="text-xs font-bold tracking-widest uppercase">Sự nghiệp</h3>
+                <p class="text-[10px] text-gray-500 mt-2 uppercase">Lãnh đạo & Quản trị</p>
+            </div>
+            <div class="p-6 border border-white/10 rounded-lg bg-white/5 scale-105 shadow-2xl">
+                <i class="fas fa-gem text-2xl text-white mb-4"></i>
+                <h3 class="text-xs font-bold tracking-[0.3em] uppercase">Vị thế</h3>
+                <p class="text-[10px] text-gray-300 mt-2 uppercase">Chuyên gia Cao cấp</p>
+            </div>
+            <div class="p-6 border border-white/5 rounded-lg hover:bg-white/5 transition">
+                <i class="fas fa-handshake text-2xl text-gray-400 mb-4"></i>
+                <h3 class="text-xs font-bold tracking-widest uppercase">Kết nối</h3>
+                <p class="text-[10px] text-gray-500 mt-2 uppercase">Hợp tác bền vững</p>
+            </div>
+        </div>
+
+        <div class="w-full max-w-xl border border-white/10 p-10 bg-white/[0.02] backdrop-blur-xl text-center">
+            <p class="text-gray-500 text-[10px] font-bold uppercase tracking-[0.4em] mb-4">Digital Identity</p>
+            <h2 class="text-2xl font-serif italic mb-8 text-gray-300">"Hành trình vạn dặm bắt đầu từ một bước chân."</h2>
+            
+            <div class="pt-8 border-t border-white/5 flex flex-col gap-4">
+                <p class="text-sm tracking-[0.2em] text-gray-400 uppercase">Hệ thống đang khởi tạo</p>
+                <div class="flex justify-center gap-6">
+                    <span class="px-4 py-2 border border-white/10 text-[10px] uppercase tracking-widest">Phone: Updating</span>
+                    <span class="px-4 py-2 border border-white/10 text-[10px] uppercase tracking-widest">Email: Updating</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="p-10 text-center opacity-30">
+        <p class="text-[9px] uppercase tracking-[0.5em]">A Digital Gift by Nguyen Tan Phong © 2026</p>
+    </footer>
+
+</body>
+</html>
