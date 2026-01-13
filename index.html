@@ -2,275 +2,101 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>ThS. Nhà Báo Lê Viết Cường | Media & Management</title>
-    
-    <meta name="description" content="Thạc sĩ, Nhà báo Lê Viết Cường - Phó Giám đốc Phụ trách Truyền thông & Đối ngoại. Chuyên gia 30 năm kinh nghiệm Báo chí, Truyền hình và Quản trị.">
-    <meta property="og:title" content="ThS. Nhà Báo LÊ VIẾT CƯỜNG">
-    <meta property="og:image" content="https://levietcuong.com/anh-chu-cuong.jpg">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thạc sĩ - Nhà báo Lê Viết Cường | Professional Profile</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg-color: #1c1c1c;
-            --text-color: #f0f0f0;
-            --accent-gold: #c6a87c; /* Màu vàng đồng sang trọng */
-            --border-dim: rgba(198, 168, 124, 0.2);
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
-            background-size: 40px 40px;
-        }
-
-        /* Font chữ nghệ thuật cho chức danh */
-        .serif-font { font-family: 'Playfair Display', serif; }
-
-        /* Tiêu đề chạy dọc hoặc cố định */
-        .tracking-widest-xl { letter-spacing: 0.3em; }
-        
-        /* Hiệu ứng nút bấm */
-        .gold-btn {
-            border: 1px solid var(--accent-gold);
-            color: var(--accent-gold);
-            transition: all 0.4s ease;
-        }
-        .gold-btn:hover {
-            background: var(--accent-gold);
-            color: #000;
-            box-shadow: 0 0 15px rgba(198, 168, 124, 0.4);
-        }
-
-        /* Hộp thông tin (Grid Box) */
-        .info-box {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--border-dim);
-            transition: 0.3s;
-            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
-            min-height: 180px; padding: 1.5rem;
-        }
-        .info-box:hover {
-            border-color: var(--accent-gold);
-            transform: translateY(-5px);
-            background: rgba(198, 168, 124, 0.05);
-        }
-
-        /* Modal Overlay */
-        .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 50; justify-content: center; align-items: center; backdrop-filter: blur(10px); }
-
-        /* Animation */
-        @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        .animate-up { animation: fadeUp 1s forwards; opacity: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        .text-gold { color: #d4af37; }
+        .fade-in { animation: fadeIn 1.5s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
+<body class="text-white min-h-screen flex flex-col justify-between relative overflow-x-hidden">
 
-<body class="min-h-screen flex flex-col items-center overflow-x-hidden">
-
-    <div id="qrModal" class="modal" onclick="closeModal('qrModal')">
-        <div class="bg-[#111] border border-[#c6a87c] p-8 max-w-sm w-full relative mx-4 shadow-2xl" onclick="event.stopPropagation()">
-            <span onclick="closeModal('qrModal')" class="absolute top-2 right-4 text-2xl cursor-pointer text-[#c6a87c]">&times;</span>
-            <div class="text-center">
-                <h3 class="text-[#c6a87c] uppercase tracking-widest text-xs mb-6">Danh thiếp điện tử</h3>
-                <div class="border border-white/10 p-2 mb-6 bg-white inline-block">
-                    <img src="QR-anhCuong.jpg" alt="QR Code" class="w-48 h-48 object-contain">
-                </div>
-                <div class="grid grid-cols-2 gap-3">
-                    <a href="tel:0908855888" class="border border-white/20 py-2 text-xs uppercase hover:bg-[#c6a87c] hover:text-black transition">Gọi điện</a>
-                    <a href="https://zalo.me/0908855888" class="border border-white/20 py-2 text-xs uppercase hover:bg-[#c6a87c] hover:text-black transition">Zalo</a>
-                </div>
-            </div>
-        </div>
+    <div class="absolute inset-0 opacity-10 pointer-events-none">
+        <div class="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] border border-gold/20 rounded-full"></div>
+        <div class="absolute bottom-[-10%] left-[-5%] w-[400px] h-[400px] border border-gold/20 rounded-full"></div>
     </div>
 
-    <div id="contactModal" class="modal">
-        <div class="bg-[#111] border border-[#c6a87c] p-10 max-w-md w-full relative mx-4">
-            <h3 class="text-[#c6a87c] uppercase tracking-widest text-sm mb-8 text-center">Đăng ký Tư vấn / Đào tạo</h3>
-            <form onsubmit="submitForm(event)">
-                <input type="text" placeholder="Họ và Tên" class="w-full bg-white/5 border-b border-white/20 p-3 mb-4 text-white outline-none focus:border-[#c6a87c]" required>
-                <input type="text" placeholder="Đơn vị công tác" class="w-full bg-white/5 border-b border-white/20 p-3 mb-4 text-white outline-none focus:border-[#c6a87c]">
-                <input type="tel" placeholder="Số điện thoại liên hệ" class="w-full bg-white/5 border-b border-white/20 p-3 mb-8 text-white outline-none focus:border-[#c6a87c]" required>
-                <div class="flex gap-4">
-                    <button type="button" onclick="closeModal('contactModal')" class="flex-1 py-3 text-xs uppercase border border-white/20 hover:bg-white/10">Đóng</button>
-                    <button type="submit" class="flex-1 py-3 text-xs uppercase bg-[#c6a87c] text-black font-bold hover:bg-[#b09060]">Gửi yêu cầu</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <div id="passModal" class="modal">
-        <div class="bg-[#111] border border-[#c6a87c] p-10 max-w-md w-full text-center">
-            <h3 class="text-xs uppercase tracking-[0.2em] text-gray-400 mb-6">Khu vực Tài liệu chuyên sâu</h3>
-            <p class="text-[10px] uppercase text-[#c6a87c] mb-6" id="docNameDisplay">Dữ liệu huấn luyện</p>
-            <input type="password" id="passInput" placeholder="Nhập mã truy cập..." class="w-full bg-white/5 border border-white/20 p-3 text-center text-white mb-6 outline-none focus:border-[#c6a87c]">
-            <div class="flex gap-4 justify-center">
-                <button onclick="closeModal('passModal')" class="text-xs uppercase text-gray-500 hover:text-white">Hủy</button>
-                <button onclick="checkPass()" class="px-6 py-2 bg-[#c6a87c]/20 border border-[#c6a87c] text-[#c6a87c] text-xs uppercase hover:bg-[#c6a87c] hover:text-black transition">Xác thực</button>
-            </div>
-        </div>
-    </div>
-
-    <header class="pt-16 pb-8 text-center animate-up" style="animation-delay: 0.1s">
-        <p class="text-[10px] md:text-xs uppercase tracking-[0.4em] text-gray-400 mb-4">Báo chí • Truyền thông • Quản trị</p>
+    <header class="p-8 md:p-12 text-center z-20 fade-in">
+        <div class="text-[10px] font-bold tracking-[0.4em] text-gold uppercase italic">Báo chí • Truyền thông • Quản trị</div>
     </header>
 
-    <div class="text-center mb-12 animate-up" style="animation-delay: 0.2s">
-        <div class="w-40 h-40 md:w-56 md:h-56 mx-auto rounded-full p-1 border border-[#c6a87c] mb-8 relative">
-            <div class="w-full h-full rounded-full overflow-hidden bg-gray-800">
-                <img src="anh-chu-cuong.jpg" alt="Lê Viết Cường" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+    <main class="flex-grow flex flex-col items-center justify-center px-6 py-4 z-10 fade-in">
+        <div class="mb-8 relative">
+            <div class="w-40 h-40 md:w-60 md:h-60 rounded-full border-2 border-gold p-1.5 shadow-[0_0_40px_rgba(212,175,55,0.15)]">
+                <div class="w-full h-full rounded-full overflow-hidden bg-gray-800">
+                    <img src="anh-chu-cuong.jpg" alt="Lê Viết Cường" class="w-full h-full object-cover">
+                </div>
             </div>
-            <div class="absolute bottom-2 right-2 bg-[#c6a87c] text-black w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-lg">
-                <i class="fas fa-check"></i>
-            </div>
+            <div class="absolute bottom-2 right-2 bg-gold text-black text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter shadow-xl">Professional</div>
         </div>
+
+        <h1 class="text-4xl md:text-6xl font-serif font-bold uppercase tracking-tighter leading-tight text-center mb-3">
+            Lê Viết Cường <span class="text-gold italic font-light text-3xl md:text-5xl block md:inline-block md:ml-2">Cuong Le</span>
+        </h1>
         
-        <h1 class="text-3xl md:text-5xl font-light mb-2 uppercase tracking-widest text-[#c6a87c]">Lê Viết Cường</h1>
-        <p class="serif-font italic text-lg md:text-xl text-gray-300 opacity-80 mb-6">Thạc sĩ - Nhà báo</p>
-        <p class="text-xs md:text-sm uppercase tracking-widest text-gray-500 max-w-2xl mx-auto px-4 leading-relaxed">
-            Phó Giám đốc Phụ trách Truyền thông & Đối ngoại<br>
-            <span class="text-[#c6a87c]">30 năm kinh nghiệm</span> điều hành Báo chí - Truyền hình & Quản trị Doanh nghiệp
-        </p>
-    </div>
+        <p class="text-sm md:text-lg font-light text-gray-400 tracking-[0.15em] mb-12 text-center uppercase">Thạc sĩ – Nhà báo • Chuyên gia Truyền thông & Đối ngoại</p>
 
-    <div class="flex flex-col md:flex-row gap-4 mb-16 animate-up px-6 w-full justify-center max-w-4xl" style="animation-delay: 0.3s">
-        <button onclick="openModal('qrModal')" class="gold-btn px-8 py-3 text-[10px] md:text-xs uppercase tracking-widest font-bold">
-            <i class="fas fa-qrcode mr-2"></i>Danh thiếp
-        </button>
-        <button onclick="openModal('contactModal')" class="gold-btn px-8 py-3 text-[10px] md:text-xs uppercase tracking-widest font-bold">
-            <i class="fas fa-calendar-check mr-2"></i>Đặt lịch tư vấn
-        </button>
-        <a href="mailto:cuongle.media@gmail.com" class="gold-btn px-8 py-3 text-[10px] md:text-xs uppercase tracking-widest font-bold flex items-center justify-center">
-            <i class="fas fa-envelope mr-2"></i>Gửi Email
-        </a>
-    </div>
-
-    <section class="w-full max-w-6xl px-6 mb-20 animate-up" style="animation-delay: 0.4s">
-        <div class="flex items-center mb-10">
-            <div class="h-[1px] bg-[#c6a87c] w-12 mr-4"></div>
-            <h2 class="text-xs uppercase tracking-[0.3em] text-[#c6a87c]">Vai trò & Học vị</h2>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-            <div class="info-box">
-                <i class="fas fa-newspaper text-2xl text-[#c6a87c] mb-4"></i>
-                <h3 class="text-[10px] font-bold uppercase tracking-wider mb-2">Tạp chí Tự động hóa</h3>
-                <p class="text-[9px] text-gray-400 uppercase">Phó Trưởng Ban Biên tập</p>
-            </div>
-            <div class="info-box">
-                <i class="fas fa-building text-2xl text-[#c6a87c] mb-4"></i>
-                <h3 class="text-[10px] font-bold uppercase tracking-wider mb-2">VP Đại diện TP.HCM</h3>
-                <p class="text-[9px] text-gray-400 uppercase">Trưởng Đại diện</p>
-            </div>
-            <div class="info-box">
-                <i class="fas fa-chalkboard-teacher text-2xl text-[#c6a87c] mb-4"></i>
-                <h3 class="text-[10px] font-bold uppercase tracking-wider mb-2">ĐH Quốc tế Hồng Bàng</h3>
-                <p class="text-[9px] text-gray-400 uppercase">Giảng viên (2023)</p>
-            </div>
-             <div class="info-box border-dashed border-white/20">
-                <i class="fas fa-graduation-cap text-2xl text-gray-500 mb-4"></i>
-                <h3 class="text-[10px] font-bold uppercase tracking-wider mb-2">HV Báo chí & Tuyên truyền</h3>
-                <p class="text-[9px] text-gray-400 uppercase">NCS Tiến sĩ PR</p>
-            </div>
-            <div class="info-box border-dashed border-white/20">
-                <i class="fas fa-certificate text-2xl text-gray-500 mb-4"></i>
-                <h3 class="text-[10px] font-bold uppercase tracking-wider mb-2">Viện CN Washington</h3>
-                <p class="text-[9px] text-gray-400 uppercase">Chứng chỉ CEO</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="w-full max-w-6xl px-6 mb-20 animate-up" style="animation-delay: 0.5s">
-        <div class="flex items-center mb-10 justify-end">
-            <h2 class="text-xs uppercase tracking-[0.3em] text-[#c6a87c] text-right">Dấu ấn Lãnh đạo</h2>
-            <div class="h-[1px] bg-[#c6a87c] w-12 ml-4"></div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-[11px] leading-relaxed text-gray-400">
-            <div class="border-l border-[#c6a87c]/30 pl-6">
-                <h4 class="text-white font-bold uppercase mb-4 text-xs"><i class="fas fa-landmark mr-2"></i>Cơ quan Nhà nước</h4>
-                <p class="mb-2"><strong class="text-gray-300">Trung tâm Báo chí TP.HCM:</strong> Phụ trách Phòng CNTT, Media & Đào tạo.</p>
-                <p>Quản lý thông tin báo chí Sở TT&TT TP.HCM (Nghiên cứu).</p>
-            </div>
-            <div class="border-l border-[#c6a87c]/30 pl-6">
-                <h4 class="text-white font-bold uppercase mb-4 text-xs"><i class="fas fa-tv mr-2"></i>Truyền hình & Báo chí</h4>
-                <p class="mb-2"><strong class="text-gray-300">VTVCab9 (INFOTV):</strong> Trưởng đại diện phía Nam.</p>
-                <p class="mb-2"><strong class="text-gray-300">VTVCab15:</strong> Giám đốc phía Nam.</p>
-                <p><strong class="text-gray-300">SCTV:</strong> Trưởng phòng Khai thác & Sản xuất.</p>
-            </div>
-             <div class="border-l border-[#c6a87c]/30 pl-6">
-                <h4 class="text-white font-bold uppercase mb-4 text-xs"><i class="fas fa-briefcase mr-2"></i>Doanh nghiệp</h4>
-                <p class="mb-2"><strong class="text-gray-300">Galaxy Media:</strong> Chủ tịch HĐTV kiêm CEO.</p>
-                <p class="mb-2"><strong class="text-gray-300">New Wave Media:</strong> GĐ Truyền thông & Sự kiện.</p>
-                <p><strong class="text-gray-300">Gia Tín Invest:</strong> Tổng giám đốc.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="w-full max-w-4xl px-6 mb-24 animate-up text-center" style="animation-delay: 0.6s">
-        <h2 class="text-[10px] uppercase tracking-[0.4em] text-gray-500 mb-8">Chuyên đề & Nghiên cứu Khoa học</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <button onclick="openPassGate('Xử lý khủng hoảng truyền thông', 'cuongle888', '#')" class="group border border-white/10 bg-white/5 p-6 hover:border-[#c6a87c] transition text-left">
-                <i class="fas fa-shield-alt text-[#c6a87c] mb-3 opacity-50 group-hover:opacity-100"></i>
-                <h4 class="text-xs font-bold uppercase text-white mb-1">Xử lý khủng hoảng</h4>
-                <p class="text-[9px] text-gray-400">Kỹ năng phát ngôn & Ứng xử truyền thông</p>
-            </button>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 w-full max-w-6xl px-4 text-center">
             
-            <button onclick="openPassGate('Quan hệ Báo chí & Mạng xã hội', 'cuongle888', '#')" class="group border border-white/10 bg-white/5 p-6 hover:border-[#c6a87c] transition text-left">
-                <i class="fas fa-network-wired text-[#c6a87c] mb-3 opacity-50 group-hover:opacity-100"></i>
-                <h4 class="text-xs font-bold uppercase text-white mb-1">Quan hệ Báo chí</h4>
-                <p class="text-[9px] text-gray-400">Chiến lược cung cấp thông tin hiệu quả</p>
-            </button>
-        </div>
-    </section>
+            <div class="p-8 border border-white/5 bg-white/[0.02] rounded-sm group hover:border-gold/30 transition min-h-[220px] flex flex-col justify-between">
+                <div>
+                    <i class="fas fa-briefcase text-gold mb-5 text-2xl"></i>
+                    <h3 class="text-[10px] font-bold tracking-widest uppercase text-gold mb-3">Chức vụ</h3>
+                    <ul class="text-[11px] text-gray-400 space-y-2 leading-relaxed tracking-wider">
+                        <li>• Trưởng VPĐD Tạp chí <a href="http://www.tudonghoangaynay.vn" target="_blank" class="hover:text-gold underline decoration-gold/30">Tự động hoá ngày nay</a> tại TPHCM</li>
+                        <li>• Phó Giám đốc <a href="http://www.clead.vn" target="_blank" class="hover:text-gold underline decoration-gold/30">CLEAD</a></li>
+                        <li>• Giảng viên <a href="http://www.hiu.vn" target="_blank" class="hover:text-gold underline decoration-gold/30">Đại học Quốc tế Hồng Bàng</a></li>
+                    </ul>
+                </div>
+            </div>
 
-    <footer class="w-full border-t border-white/10 py-12 text-center text-[10px] uppercase tracking-widest text-gray-500 animate-up" style="animation-delay: 0.7s">
-        <div class="mb-4">
-            <a href="tel:0908855888" class="mx-3 hover:text-[#c6a87c]">090 88 55 888</a> • 
-            <a href="mailto:cuongle.media@gmail.com" class="mx-3 hover:text-[#c6a87c]">cuongle.media@gmail.com</a>
+            <div class="p-8 border border-gold/40 bg-gold/5 rounded-sm shadow-2xl transform scale-105 z-20 min-h-[220px] flex flex-col justify-between">
+                <div>
+                    <i class="fas fa-graduation-cap text-gold mb-5 text-2xl"></i>
+                    <h3 class="text-[10px] font-bold tracking-widest uppercase text-gold mb-3">Học thuật</h3>
+                    <ul class="text-[11px] text-white space-y-3 leading-relaxed tracking-wider font-semibold italic">
+                        <li>• NCS/Tiến sĩ Ngành Quan hệ Công chúng (PR)</li>
+                        <li>• Thạc sĩ Báo chí - Chuyên ngành Quản trị Báo chí Truyền thông</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="p-8 border border-white/5 bg-white/[0.02] rounded-sm group hover:border-gold/30 transition min-h-[220px] flex flex-col justify-between">
+                <div>
+                    <i class="fas fa-star text-gold mb-5 text-2xl"></i>
+                    <h3 class="text-[10px] font-bold tracking-widest uppercase text-gold mb-3">Kỹ năng</h3>
+                    <ul class="text-[11px] text-gray-400 space-y-3 leading-relaxed tracking-wider">
+                        <li>• Quản trị & Điều hành tổ chức/doanh nghiệp</li>
+                        <li>• Đào tạo/Diễn giả chuyên sâu lĩnh vực Báo chí - Truyền thông</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <p>© 2026 Le Viet Cuong. All rights reserved.</p>
+
+        <div class="w-full max-w-2xl border border-white/10 bg-white/5 backdrop-blur-md p-10 md:p-14 rounded-sm text-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <a href="tel:+84908855888" class="group block">
+                    <span class="text-[9px] uppercase tracking-widest text-gray-500 block mb-2 group-hover:text-gold transition">Hotline</span>
+                    <span class="text-xl md:text-2xl font-serif text-white/90 group-hover:text-gold transition">+84 90 88 55 888</span>
+                </a>
+                <a href="mailto:cuongle.media@gmail.com" class="group block">
+                    <span class="text-[9px] uppercase tracking-widest text-gray-500 block mb-2 group-hover:text-gold transition">Email</span>
+                    <span class="text-xl md:text-2xl font-serif text-white/90 group-hover:text-gold transition lowercase">cuongle.media@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="p-8 text-center fade-in border-t border-white/5">
+        <p class="text-gray-700 text-[9px] uppercase tracking-[0.4em] mb-2">© 2026 LÊ VIẾT CƯỜNG. ALL RIGHTS RESERVED.</p>
+        <p class="text-gold/30 text-[8px] uppercase tracking-widest italic">A Digital Gift by Nguyen Tan Phong</p>
     </footer>
 
-    <script>
-        let currentTarget = ""; let currentCode = "";
-
-        // Mở Modal thường
-        function openModal(id) { document.getElementById(id).style.display = 'flex'; }
-        
-        // Đóng Modal
-        function closeModal(id) { document.getElementById(id).style.display = 'none'; }
-
-        // Mở Modal nhập pass
-        function openPassGate(name, code, url) {
-            document.getElementById('passModal').style.display = 'flex';
-            document.getElementById('docNameDisplay').innerText = name;
-            document.getElementById('passInput').value = "";
-            currentTarget = url;
-            currentCode = code;
-        }
-
-        // Kiểm tra pass
-        function checkPass() {
-            const input = document.getElementById('passInput').value;
-            if(input === currentCode) {
-                alert('Truy cập thành công! (Mô phỏng tải tài liệu)');
-                window.location.href = currentTarget;
-            } else {
-                alert('Mã truy cập không đúng.');
-            }
-        }
-
-        // Gửi Form
-        function submitForm(e) {
-            e.preventDefault();
-            alert('Đã nhận thông tin đăng ký. Chú Cường sẽ phản hồi sớm.');
-            closeModal('contactModal');
-        }
-    </script>
 </body>
 </html>
